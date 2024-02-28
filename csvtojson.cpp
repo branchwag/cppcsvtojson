@@ -11,6 +11,7 @@ public:
     TradeRecord(
         string account,
         string accountType
+        //need to put in all of the other fields
     ) {
         Account = account;
         AccountType = accountType;
@@ -39,6 +40,8 @@ int main() {
     ifstream inputFile;
     inputFile.open("testfilewithtrades.csv");
     string line = "";
+    getline(inputFile, line);
+    line = "";
 
     vector<TradeRecord> trades;
     //std::vector<string> data;
@@ -115,5 +118,3 @@ int main() {
 displayTrades(trades);
 return 0;
 }
-
-//need to remove header still
