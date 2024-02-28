@@ -6,15 +6,46 @@
 
 using namespace std;
 
-int main(int argc, char* argv) {
+struct TradeRecord {
+public:
+    TradeRecord(
+        string account,
+        string accountType
+    ) {
+        Account = account;
+        AccountType = accountType;
+    }
 
-    std::vector<string> data;
+    void display() {
+        cout << "   Account: " << Account << endl;
+        cout << "   AccountType: " << AccountType << endl;
+        cout << endl;
+    }
+
+    string Account;
+    string AccountType;
+};
+
+void displayTrades(vector<TradeRecord>& trades) {
+
+    for (auto trade : trades) {
+        trade.display();
+    }
+}
+
+
+int main() {
 
     ifstream inputFile;
     inputFile.open("testfilewithtrades.csv");
-
     string line = "";
+
+    vector<TradeRecord> trades;
+    //std::vector<string> data;
+
     while (getline(inputFile, line)) {
+
+        stringstream inputString(line);
 
         string account;
         string accountType;
@@ -62,23 +93,27 @@ int main(int argc, char* argv) {
         string Filler3;
         string Filler4;
         string Filler5;
-        string tempString = "";
-
-        stringstream inputString(line);
+        string tempString;
 
         getline(inputString, account, ',');
         getline(inputString, accountType , ',');
 
         //cout << line << endl;
 
-        cout << account << endl;
+        //cout << accountType << endl;
+
+        TradeRecord trade(account, accountType);
+        trades.push_back(trade);
     
         line = "";
+
         
     }
 
 //cout << line << endl;
 //cout << "test" << endl;
-    
-    return 0;
+displayTrades(trades);
+return 0;
 }
+
+//need to remove header still
