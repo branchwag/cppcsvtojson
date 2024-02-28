@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char* argv) {
 
     ifstream inputFile;
-    inputFile.open("C:\temp\testfilewithtrades.csv");
+    inputFile.open("testfilewithtrades.csv");
 
     string line = "";
     while (getline(inputFile, line)) {
@@ -69,12 +69,13 @@ int main(int argc, char* argv) {
 
         
         cout << line << endl;
+        //cout << account << endl;
 
         //line = "";
     }
 
-cout << line << endl;
-cout << "test" << endl;
+//cout << line << endl;
+//cout << "test" << endl;
     
     return 0;
 }
