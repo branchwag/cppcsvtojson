@@ -69,7 +69,6 @@ int main(int argc, char* argv) {
         getline(inputString, account, ',');
         getline(inputString, accountType , ',');
 
-        
         //cout << line << endl;
 
         cout << account << endl;
