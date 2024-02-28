@@ -8,6 +8,8 @@ using namespace std;
 
 int main(int argc, char* argv) {
 
+    std::vector<string> data;
+
     ifstream inputFile;
     inputFile.open("testfilewithtrades.csv");
 
@@ -64,14 +66,16 @@ int main(int argc, char* argv) {
 
         stringstream inputString(line);
 
-        getline(inputString, account);
-        getline(inputString, accountType);
+        getline(inputString, account, ',');
+        getline(inputString, accountType , ',');
 
         
-        cout << line << endl;
-        //cout << account << endl;
+        //cout << line << endl;
 
-        //line = "";
+        cout << account << endl;
+    
+        line = "";
+        
     }
 
 //cout << line << endl;
