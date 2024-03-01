@@ -3,7 +3,10 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <map>
+#include <nlohmann/json.hpp>
 
+using json = nlohmann::json;
 using namespace std;
 
 struct TradeRecord {
