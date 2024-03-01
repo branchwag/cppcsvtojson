@@ -153,7 +153,14 @@ public:
         cout << "   Filler4: " << Filler4 << endl;
         cout << "   Filler5: " << Filler5 << endl;
 
+
         cout << endl;
+    }
+
+    void makeJSON() {
+        //will put code to make JSON here
+        //library or organic?
+        //need to call this still
     }
 
     string Account;
