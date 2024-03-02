@@ -65,7 +65,19 @@ int main(int argc, char *argv[]) {
 
     cout << jsonData.dump(4) << endl;
 
-    //adjust later so this creates a file
+    //Creates a file with output
+    
+    std::ofstream outputFile("output.txt");
+
+
+  if (outputFile.is_open()) { // check if the file was opened successfully
+    outputFile << jsonData.dump(4); // write data to the file
+    outputFile.close(); // close the file when done
+    std::cout << "Data was written to output.txt\n";
+  }
+  else {
+    std::cerr << "Error opening file\n";
+  }
 
     return 0;
 }
