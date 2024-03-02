@@ -1,6 +1,6 @@
 # cppcsvtojson
 
-This is a program for parsing a csv file into json via the terminal. many thanks to the following two tutorials:
+This is a program for parsing a csv file into json via the terminal. Many thanks to the following two tutorials:
 
 Code Morsels How to Parse a CSV file:
 https://www.youtube.com/watch?v=NFvxA-57LLA
@@ -11,6 +11,9 @@ https://www.youtube.com/watch?v=on74MKlxnts
 Example usage and output:
 
 ```
+
+C:\Users\branc\projects\csvtojson>g++ csvtojson.cpp -std=c++11 -I json\include
+
 C:\Users\branc\projects\csvtojson>a.exe testfilewithtrades.csv
 [
 {
