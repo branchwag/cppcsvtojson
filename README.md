@@ -10,6 +10,7 @@ https://www.youtube.com/watch?v=on74MKlxnts
 
 Example usage and output:
 
+```
 C:\Users\branc\projects\csvtojson>a.exe testfilewithtrades.csv
 [
 {
@@ -109,3 +110,4 @@ C:\Users\branc\projects\csvtojson>a.exe testfilewithtrades.csv
 "Trailer": ""
 }
 ]
+```
