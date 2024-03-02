@@ -5,7 +5,7 @@ This is a program for parsing a csv file into json via the terminal. many thanks
 Code Morsels How to Parse a CSV file:
 https://www.youtube.com/watch?v=NFvxA-57LLA
 
-Tommy Ngo's CSV to JSON
+Tommy Ngo's CSV to JSON:
 https://www.youtube.com/watch?v=on74MKlxnts
 
 Example usage and output:
